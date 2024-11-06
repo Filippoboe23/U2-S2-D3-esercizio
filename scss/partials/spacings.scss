@@ -1,0 +1,18 @@
+@mixin generate-spacings($property, $sizes) {
+  @each $size-name, $size-value in $sizes {
+    .#{$property}-#{$size-name} {
+      #{$property}: #{$size-value};
+    }
+  }
+}
+
+$spacing-sizes: (
+  sm: 0.5rem,
+  normal: 1rem,
+  lg: 2rem,
+  xl: 3rem,
+  xxl: 4rem,
+);
+
+@include generate-spacings("padding", $spacing-sizes);
+@include generate-spacings("margin", $spacing-sizes);

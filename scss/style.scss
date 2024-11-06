@@ -1,0 +1,98 @@
+@import "partials/reset";
+@import "partials/colors";
+@import "partials/fonts";
+@import "partials/spacings";
+@import "partials/buttons";
+@import "partials/mixins";
+@import "partials/animations";
+
+body {
+  font-family: $font-family-main;
+  background-color: $bg-hero;
+  color: $color-text;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $bg-hero;
+  .logo {
+    .logomini {
+      width: 10%;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin-inline: 1rem;
+        a {
+          color: $color-text;
+          text-decoration: none;
+          font-size: $font-size-normal;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: $bg-hero;
+  color: $color-text;
+
+  .content {
+    @include title-big;
+    margin-bottom: 1rem;
+
+    p {
+      font-size: $font-size-normal;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+
+      .btn-primary {
+        @extend .btn-primary;
+      }
+      .btn-secondary {
+        @extend .btn-secondary;
+      }
+      .btn-success {
+        @extend .btn-success;
+      }
+    }
+  }
+
+  .image {
+    width: 50%;
+    @include floating($border: 2px solid lighten($bg-hero, 20%));
+  }
+}
+
+.grid {
+  @include grid(4);
+  padding: 2rem;
+  background-color: #fff;
+
+  .grid-item {
+    background-color: $color-text;
+    padding: 1rem;
+    @include floating($box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05));
+  }
+}
+
+.hero,
+.grid-item {
+  @include fade-slide("fade-slide", 0.5s, 0.2s);
+}

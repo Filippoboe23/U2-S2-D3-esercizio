@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 100%;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.padding-sm {
+  padding: 0.5rem;
+}
+
+.padding-normal {
+  padding: 1rem;
+}
+
+.padding-lg {
+  padding: 2rem;
+}
+
+.padding-xl {
+  padding: 3rem;
+}
+
+.padding-xxl {
+  padding: 4rem;
+}
+
+.margin-sm {
+  margin: 0.5rem;
+}
+
+.margin-normal {
+  margin: 1rem;
+}
+
+.margin-lg {
+  margin: 2rem;
+}
+
+.margin-xl {
+  margin: 3rem;
+}
+
+.margin-xxl {
+  margin: 4rem;
+}
+div .logomini {
+  width: 10%;
+}
+
+.btn-primary,
+.hero .content .buttons .btn-primary {
+  background-color: #0e6cff;
+  color: #f4f4f4;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-primary:hover,
+.hero .content .buttons .btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-secondary,
+.hero .content .buttons .btn-secondary {
+  background-color: #ff8700;
+  color: #f4f4f4;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-secondary:hover,
+.hero .content .buttons .btn-secondary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-success,
+.hero .content .buttons .btn-success {
+  background-color: #4caf50;
+  color: #f4f4f4;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.btn-success:hover,
+.hero .content .buttons .btn-success:hover {
+  transform: translateY(-3px);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #640fc5;
+  color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #640fc5;
+}
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+}
+.header nav ul li {
+  margin-inline: 1rem;
+}
+.header nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background-color: #640fc5;
+  color: #f4f4f4;
+}
+.hero .content {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+}
+.hero .content p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.hero .content .buttons {
+  display: flex;
+  gap: 1rem;
+}
+.hero .image {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid #9749f1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+.grid .grid-item {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.hero,
+.grid-item {
+  animation: fade-slide 2s ease-in-out 2s forwards;
+}
+@keyframes fade-slide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,12 @@
+$font-family-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$font-size-small: 0.875rem;
+$font-size-normal: 1rem;
+$font-size-large: 1.5rem;
+$font-size-title-big: 2.5rem;
+
+@mixin title-big {
+  font-family: $font-family-main;
+  font-size: $font-size-title-big;
+  font-weight: bold;
+  color: $color-text;
+}

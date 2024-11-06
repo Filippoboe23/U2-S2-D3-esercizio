@@ -1,0 +1,39 @@
+.padding-sm {
+  padding: 0.5rem;
+}
+
+.padding-normal {
+  padding: 1rem;
+}
+
+.padding-lg {
+  padding: 2rem;
+}
+
+.padding-xl {
+  padding: 3rem;
+}
+
+.padding-xxl {
+  padding: 4rem;
+}
+
+.margin-sm {
+  margin: 0.5rem;
+}
+
+.margin-normal {
+  margin: 1rem;
+}
+
+.margin-lg {
+  margin: 2rem;
+}
+
+.margin-xl {
+  margin: 3rem;
+}
+
+.margin-xxl {
+  margin: 4rem;
+}/*# sourceMappingURL=spacings.css.map */
